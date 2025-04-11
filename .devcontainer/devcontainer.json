@@ -1,0 +1,52 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "DevEnv:Next-tsl",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+	// Use 'dockerFile' if you're using a Dockerfile. More info: https://containers.dev/guide/dockerfile
+	// "build" : {
+    // 	"dockerfile": "../Dockerfile",
+    // 	"target": "development",
+    // 	"context": "."
+  	// },
+
+	// Docker container name settings.
+	"runArgs": ["--name", "DevContainer-Next-tsl"],
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2.5.3": {}
+	},
+	// Use 'settings' to set *default* container specific settings.json values on container create.
+	"containerEnv": {
+        "TZ": "Asia/Tokyo"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rvest.vs-code-prettier-eslint",
+				"ms-playwright.playwright",
+				"christian-kohler.path-intellisense",
+				"formulahendry.auto-rename-tag",
+				"bradlc.vscode-tailwindcss",
+				"ms-azuretools.vscode-docker",
+				"ms-vscode-remote.remote-containers",
+				"oderwat.indent-rainbow",
+				"dbaeumer.vscode-eslint"
+			]
+		}
+	}
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "yarn install",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
