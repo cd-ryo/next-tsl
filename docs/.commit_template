@@ -1,0 +1,42 @@
+# ==== Commit Messages =============================================================
+
+# ==== Commit Title (Commit Summary) Format ========================================
+# <emoji> <type>: #<Issue Number> <subject>
+#
+# <description>
+#
+# ==== Example =====================================================================
+# ✨ feat: Create shared display components for top and service pages
+# ✏️ fix: #123 Corrected a typo in the Terms of Use
+
+# ==== Type ( Prefix ) =============================================================
+# fix: ------------------ Bug fix
+# hotfix: --------------- Emergency bug fix
+# feat: ----------------- New feature (short for feature)
+# docs: ----------------- Documentation-only changes
+# style: ---------------- Code formatting changes like whitespace, line breaks, etc.
+# refactor:	------------- Code restructuring
+# test: ----------------- Adding or correcting tests
+# chore: ---------------- Changes related to build tools or auto-generated files/libraries
+
+# ==== Emojis ======================================================================
+# 🐛 :bug: --------------- Bug fix (fix)
+# 🩹 :adhesive_bandage: -- Fix Lint errors or code style (style)
+# 🚧 :construction: ------ WIP - Work In Progress (style)
+# ✨ :sparkles: ---------- New feature (feat)
+# 🎉 :tada: -------------- Major feature release worth celebrating (feat)
+# 🚀 :rocket: ------------ Performance improvements (feat)
+# 🎨 :art: --------------- Visual changes like CSS styling (feat)
+# 💄 :lipstick: ---------- UI improvements(feat)
+# 🔒️ :lock: -------------- Security improvements  (feat)
+# ✏️ :pencil: ------------ Fix typos (docs)
+# 📝 :memo: -------------- Documentation updates  (docs)
+# ♻️ :recycle: ----------- Code refactoring (refactor)
+# 🔥 :shower: ------------ Remove code or files. (refactor)
+# 💚 :green_heart: ------- Fix CI builds or test improvements  (test)
+# ⬆️ :arrow_up: ---------- Dependency updates (chore)
+# 🔖 :bookmark: ---------- Release / Version tags.
+
+# ==== Appendix ====================================================================
+# https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
+# https://gitmoji.dev/
