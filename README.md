@@ -31,6 +31,7 @@ Next-tsl is New Era Social Networking Service Engine.
   - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 Please download and install Docker (Docker desktop) in advance.
+
 事前にDocker (Docker Desktop) のダウンロード、インストールをお願いいたします。
 
 #### Editor: VS Code or JetBrains IDE ( DevContainer compatible editor )
@@ -70,10 +71,10 @@ TBA
 
 # Contributing: 開発への参加の仕方
 
-[Issues](https://github.com/cd-ryo/next-tsl/issues?q=is%3Aissue%20state%3Aopen%20)にあるいろいろな修正にご協力いただけると嬉しいです。
+[Issues](https://github.com/cd-ryo/next-tsl/issues?q=is%3Aissue%20state%3Aopen%20)の修正にご協力いただけると嬉しいです。
 
 このリポジトリでは内容についての質問や指摘、資料の改善などにご協力いただけるcontributerを募集しています。 
-詳しくは「[Contribution Guide](https://github.com/cd-ryo/next-tsl/blob/main/docs/CONTRIBUTING.md)」を御覧ください。
+詳しくは「[Contribution Guide](https://github.com/cd-ryo/next-tsl/blob/main/CONTRIBUTING.md)」を御覧ください。
 
 ## Structure: ディレクトリ構造
 
@@ -91,7 +92,10 @@ next-tsl (Root DIR)
   ├─ docker/ [DIR] ---------------------- コンテナ設定ファイルを管理
   ├─ docs/ [DIR]  ----------------------- 各種ドキュメントを格納
   ├─ .gitignore  ------------------------ gitignoreファイル
+  ├─ CODE_OF_CONDUCT.md ----------------- 行動規範
+  ├─ CONTRIBUTING.md -------------------- 開発への参加の仕方
   ├─ LICENSE  --------------------------- ライセンス（MIT）
+  ├─ NOTICE  ---------------------------- ライセンスにおける注意事項
   └─ README.md  ------------------------- このプロジェクトの概要
 ```
 

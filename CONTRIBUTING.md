@@ -1,5 +1,7 @@
 # Contribution Guide: 開発への参加の仕方
 
+[English Version](https://github.com/cd-ryo/next-tsl/blob/main/docs/en/CONTRIBUTING.md)
+
 このプロジェクトへのコントリビュート方法についての案内です。
 
 ## Issues
@@ -15,10 +17,14 @@
 
 Pull Requestはいつでも歓迎しています。
 
+### Pull Request Base: Pull Requestの対象ブランチ 
+
+Pull Requestの投げ先は「[devlop](https://github.com/cd-ryo/next-tsl/tree/develop)」ブランチへお願いします
+
 ### 受け入れるPull Request
 
-次の種類のPull Requestを受け付けています。 基本的なPull Request（特に細かいもの）は、Issueを立てずにPull Requestを送ってもらって問題ありません。
-
+次の種類のPull Requestを受け付けています。
+基本的なPull Request（特に細かいもの）は、Issueを立てずにPull Requestを送ってもらって問題ありません。
 「このような修正/改善はどうでしょう？」という疑問がある場合は、Issueを立てて相談してください。
 
 - 誤字の修正
@@ -35,10 +41,7 @@ Pull Requestはいつでも歓迎しています。
 
 CODE OF CONDUCTに反する内容を含むもの
 
-
 ## Running Tests
-
-sa
 
 ```bash
 npm test
@@ -55,11 +58,14 @@ npm test
 
 ## コミットメッセージ規約
 
-AngularのGit Commit Guidelinesをベースとしています。
 
-- https://github.com/conventional-changelog/conventional-changelog/blob/master/packages/conventional-changelog-angular/README.md
+### Format
+```txt
+<emoji> <commit-type>: #<Issue Number> <subject>
 
-以下のような形で
+<description>
+
+```
 
 - 1行目に概要
 - 2行目は空行
@@ -68,36 +74,56 @@ AngularのGit Commit Guidelinesをベースとしています。
 最後に関連するIssue(任意)を書きます。
 `fix #<issue番号>` のように書くことで、PRをマージした時に自動的にIssueを閉じることができます。
 
-- [Linking a pull request to an issue - GitHub Docs](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
-
-```
-feat(ngInclude): add template url parameter to events
+### Example
+```txt
+# Example 1
+✨ feat: add template url parameter to events
 
 The `src` (i.e. the url of the template to load) is now provided to the
 `$includeContentRequested`, `$includeContentLoaded` and `$includeContentError`
 events.
 
-Closes #8453
 Closes #8454
+
+# Example 2
+✏️ fix: #123 Corrected a typo in the Terms of Use
+```
+
+- [Linking a pull request to an issue - GitHub Docs](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
+
+
+
+### Emoji: 絵文字について
+
+
+
+[gitmoji](https://gitmoji.dev/)を参考に絵文字を先頭に貼り付けてください。
+
+頻繁に利用されるものとして、下記のリストを参考にしてください。
+
+```txt
+🐛 :bug: --------------- バグ修正 (fix)
+🩹 :adhesive_bandage: -- Lintエラーの修正 etc (style)
+🚧 :construction: ------ WIP ( Work In Progress )
+✨ :sparkles: ---------- 機能追加 (feat)
+🎉 :tada: -------------- 盛大に祝うべき大きな機能追加 (feat)
+🚀 :rocket: ------------ パフォーマンス改善 (feat)
+🎨 :art: --------------- CSSスタイリングなど、見た目の修正 (feat)
+💄 :lipstick: ---------- UIの改善 (feat)
+🔒️ :lock: -------------- セキュリティ関連の改善 (feat)
+✏️ :pencil: ------------ Fix typos.ドキュメント修正 (docs)
+📝 :memo: -------------- ドキュメント修正 (docs)  
+♻️ :recycle: ----------- リファクタリング (refactor)
+🗑️ :wastebasket: ------- 不要なファイルの削除 (refactor)
+💚 :green_heart: ------- Fix CI Build. テストやCIの修正・改善 (test)
+⬆️ :arrow_up: ---------- 依存パッケージなどのアップデート (chore)
+🔖 :bookmark: ---------- Release / Version tags. 
 ```
 
 
-```
-                         scope        commit title
+### Commit Type
 
-        commit type       /                /      
-                \        |                |
-                 feat(ngInclude): add template url parameter to events
-
-        body ->  The 'src` (i.e. the url of the template to load) is now provided to the
-                 `$includeContentRequested`, `$includeContentLoaded` and `$includeContentError`
-                 events.
-
- referenced  ->  Closes #8453
- issues          Closes #8454
-```
-
-`commit type` としては次のようなものがあります。
+`commit-type` としては次のようなものがあります。
 
 - feat
     - 新しい機能の追加など
@@ -125,14 +151,8 @@ Closes #8454
 - chore
     - その他
 
-`commit type`は、迷ったらとりあえず`chore`と書きます。
+`type`は、迷うようでしたら、とりあえず`chore`と書きます。
 
-```
-chore: コミットメッセージ
-```
-
-
-**Note:** As you rewrote history, you will now need to force-push if you changed commits that are already on a remote server.
 
 ## Appendix
 
