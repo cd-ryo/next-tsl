@@ -1,38 +1,40 @@
 # ==== Commit Messages =============================================================
 
-# ==== Commit Title (Commit Summary) Format ========================================
-# :emoji: Tag: Subject
+# ==== Commit Message (Commit Summary) Format ======================================
+# <emoji> <commit-type >: #<IssueNumber> <subject>
+# 
+# <description>
 
-# 【sample】
-# feature: トップ画面とサービス画面に共通する【契約プランミニ表示コンポーネント】を作成した
-# fix: #123 利用規約文言の誤字を修正した
+# ==== Example =====================================================================
+# ✨ feat: Create shared display components for the top page and service page
+# ✏️ fix: #123 Corrected a typo in the Terms of Use
 
-# ==== Tag ( Prefix ) ==============================================================
-# fix: ------------------ バグ修正、クリティカルなバグ修正なら 
-# hotfix: --------------- 緊急バグ修正
-# feat: ----------------- feat は feature の略
-# docs: ----------------- ドキュメントのみ修正
-# style: ---------------- 空白、セミコロン、行、コーディングフォーマットなどの修正
-# refactor:	------------- 整理 （リファクタリング等）
-# test: ----------------- テスト追加や間違っていたテストの修正
-# chore: ---------------- ビルドツールやライブラリで自動生成されたものをコミットするとき
+# ==== commit-type ( Prefix ) ======================================================
+# fix: ------------------ Bug fix
+# hotfix: --------------- Emergency bug fix
+# feat: ----------------- New feature (short for feature)
+# docs: ----------------- Documentation-only changes
+# style: ---------------- Code formatting changes like whitespace, line breaks, etc.
+# refactor:	------------- Code restructuring (e.g., refactoring)
+# test: ----------------- Adding or correcting tests
+# chore: ---------------- Changes related to build tools or auto-generated files/libraries
 
 # ==== Emojis ======================================================================
-# 🐛 :bug: --------------- バグ修正 (fix)
-# 🩹 :adhesive_bandage: -- Lintエラーの修正やコードスタイルの修正 (style)
-# 🚧 :construction: ------ WIP ( Work In Progress )
-# ✨ :sparkles: ---------- 機能追加 (feat)
-# 🎉 :tada: -------------- 盛大に祝うべき大きな機能追加 (feat)
-# 🚀 :rocket: ------------ パフォーマンス改善 (feat)
-# 🎨 :art: --------------- CSSスタイリングなど、見た目の修正 (feat)
-# 💄 :lipstick: ---------- UIの改善 (feat)
-# 🔒️ :lock: -------------- セキュリティ関連の改善 (feat)
-# ✏️ :pencil: ------------ Fix typos.ドキュメント修正 (docs)
-# 📝 :memo: -------------- ドキュメント修正 (docs)
-# ♻️ :recycle: ----------- リファクタリング (refactor)
-# 🔥 :shower: ------------ Remove code or files. (refactor)
-# 💚 :green_heart: ------- Fix CI Build. テストやCIの修正・改善 (test)
-# ⬆️ :arrow_up: ---------- 依存パッケージなどのアップデート (chore)
+# 🐛 :bug: --------------- Bug fix (fix)
+# 🩹 :adhesive_bandage: -- Fix Lint errors or code style (style)
+# 🚧 :construction: ------ Work In Progress (WIP)
+# ✨ :sparkles: ---------- New feature (feat)
+# 🎉 :tada: -------------- Major feature release worth celebrating (feat)
+# 🚀 :rocket: ------------ Performance improvements (feat)
+# 🎨 :art: --------------- Visual changes like CSS styling (feat)
+# 💄 :lipstick: ---------- UI improvements (feat)
+# 🔒️ :lock: -------------- Fix typos (docs)
+# ✏️ :pencil: ------------ Security improvements (feat)
+# 📝 :memo: -------------- Documentation updates (docs)
+# ♻️ :recycle: ----------- Code refactoring (refactor)
+# 🗑️ :wastebasket: ------- Remove code or files (refactor)
+# 💚 :green_heart: ------- Fix CI builds or test improvements (test)
+# ⬆️ :arrow_up: ---------- Dependency updates (chore)
 # 🔖 :bookmark: ---------- Release / Version tags.
 
 # ==== Appendix ====================================================================
