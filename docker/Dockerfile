@@ -1,1 +1,1 @@
-FROM mcr.microsoft.com/devcontainers/cpp:1-22-bookworm
+FROM mcr.microsoft.com/devcontainers/typescript-node:latest
