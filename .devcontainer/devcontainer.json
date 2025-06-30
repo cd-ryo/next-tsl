@@ -18,14 +18,31 @@
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/devcontainers/features/common-utils:2.5.3": {}
+		"ghcr.io/devcontainers/features/common-utils:2.5.3": {
+			"installZsh": "true",
+			"installOhMyZsh": "true",
+			"installOhMyZshConfig": "true"
+		}
 	},
+
 	// Use 'settings' to set *default* container specific settings.json values on container create.
 	"containerEnv": {
-        "TZ": "Asia/Tokyo"
+        "TZ": "Asia/Tokyo",
+		"APP_NAME": "next-tsl",
+		"SHELL": "/bin/zsh",
+		"NODE_ENV": "development"
 	},
+
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "/bin/zsh .devcontainer/command/postCreateCommand.sh",
+	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh"
+			},
+			// Add the IDs of extensions you want to install in the container.
 			"extensions": [
 				"rvest.vs-code-prettier-eslint",
 				"ms-playwright.playwright",
@@ -42,12 +59,6 @@
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
-
-	// Configure tool-specific properties.
-	// "customizations": {},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
