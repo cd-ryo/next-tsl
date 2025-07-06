@@ -22,7 +22,9 @@
 			"installZsh": "true",
 			"installOhMyZsh": "true",
 			"installOhMyZshConfig": "true"
-		}
+		},
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
 	},
 
 	// Use 'settings' to set *default* container specific settings.json values on container create.
